@@ -2,7 +2,7 @@
 
 int gcd(int a, int b) {
 	if (a <= 0 || b <= 0)
-		cout << "Error! You cannot enter negative numbers!" << endl;
+		return 0;
 	else {
 		while (a%b!=0||b%a!=0)
 		{
@@ -11,11 +11,10 @@ int gcd(int a, int b) {
 			else
 				b -= a;
 		}
-		cout << "Your NOD:";
 		if (a % b == 0)
-			cout << a << endl;
+			return a;
 		else
-			cout << b << endl;
+			return b;
 	}
 return 0;
 }
