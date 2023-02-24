@@ -13,9 +13,9 @@ int gcd(int a, int b) {
 		}
 		cout << "Your NOD:";
 		if (a % b == 0)
-			cout << a << std::endl;
+			cout << a << endl;
 		else
-			cout << b << std::endl;
+			cout << b << endl;
 	}
 return 0;
 }
